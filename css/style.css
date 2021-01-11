@@ -7,31 +7,38 @@
 }
 
 .header {
-    background-color: black;
     box-shadow: 0px 3px 15px 0px rgba(163, 163, 163, 0.5);
 }
 
+.header__logo {
+    color: #000;
+    padding: 5px;
+    text-shadow: 1px 2px 3px #808080;
+}
+
 .header__inner {
-    height: 60px;
+    height: 100%;
     max-width: 1230px;
     padding-right: 15px;
-    padding-left: 15px;
     margin: 0 auto;
-    background-color: blue;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.header__logo {
-    height: 50px;
-    width: 150px;
-    background-color: crimson;
+.header__title {
+    font-weight: normal;
+    font-size: 16px;
 }
 
-/* .header__nav {
-    background-color:darkgreen;
-} */
+.header__title span {
+    padding-left: 20px;
+    display: block;
+}
+
+.header__logo {
+    height: 50px;
+}
 
 .menu {
     list-style: none;
@@ -39,18 +46,21 @@
 }
 
 .menu__btn {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-align: center;
-    width: 200px;
+    width: 180px;
     height: 40px;
     display: inline-block;
     text-decoration: none;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     line-height: 40px;
 }
 
 .menu__btn:hover {
     color: #fff;
-    background-color: #000;
+    background-color: darkgray;
 }
 
 .menu__list {
@@ -62,9 +72,46 @@
 }
 
 main {
+    background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)) , 
+    url(../img/test2.png);
     height: calc(100vh - 60px);
-    /* background-color: rgb(153, 153, 152); */
-    /* background-image: url(../img/test.jpeg); */
-    background-size: cover;
+    background-image: url(../img/test2.png);
+    background-repeat: no-repeat;
+    background-size: auto 90%;
     background-position: right bottom;
+    width: 1230px;
+    margin: 0 auto;
 }
+
+.learn__menu {
+    padding: 50px;
+    list-style: none;
+}
+
+.learn__list {
+    padding: 20px;
+}
+
+.learn__btn {
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    line-height: 60px;
+    border-radius: 10px;
+    box-shadow: 6px 1px 2px 1px rgba(163, 163, 163, 0.5);
+}
+
+.footer {
+    height: 180px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 180px;
+}
+
+
+/* 以下あとで削除 */
