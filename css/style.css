@@ -19,7 +19,6 @@
 .header__inner {
     height: 100%;
     max-width: 1230px;
-    padding-right: 15px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -43,9 +42,10 @@
 .menu {
     list-style: none;
     display: flex;
+    /* display: none; */
 }
 
-.menu__btn {
+.menu__list {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: center;
@@ -58,7 +58,7 @@
     line-height: 40px;
 }
 
-.menu__btn:hover {
+.menu__list:hover {
     color: #fff;
     background-color: darkgray;
 }
@@ -71,6 +71,14 @@
     margin-right: 0px;
 }
 
+.menu__btn {
+    /* display: none; */
+}
+
+.hamburger-menu {
+    display: none;
+}
+
 main {
     height: calc(100vh - 60px);
     background-image: url(../img/bg-image.gif);
@@ -78,6 +86,7 @@ main {
     background-size: auto 90%;
     background-position: right bottom;
     max-width: 1230px;
+    min-height: 720px;
     margin: 0 auto;
 }
 
@@ -136,3 +145,52 @@ nav {
 main {
     background-color: brown;
 } */
+
+
+.menu__btn {
+    /* position: fixed; */
+    /* top: 10px; */
+    /* right: 10px; */
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #000;
+}
+
+.menu__btn span,
+.menu__btn span:before,
+.menu__btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu__btn span:before {
+    bottom: 8px;
+}
+.menu__btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu__btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu__btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu__btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
