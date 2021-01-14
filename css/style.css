@@ -39,13 +39,13 @@
     height: 50px;
 }
 
-.menu {
+.navi {
     list-style: none;
     display: flex;
     /* display: none; */
 }
 
-.menu__list {
+.navi__link {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: center;
@@ -58,24 +58,24 @@
     line-height: 40px;
 }
 
-.menu__list:hover {
+.navi__link:hover {
     color: #fff;
     background-color: darkgray;
 }
 
-.menu__list {
+.navi__list {
     margin-right: 5px;
 }
 
-.menu__list:last-child {
+.navi__list:last-child {
     margin-right: 0px;
 }
 
-.menu__btn {
-    /* display: none; */
-}
+/* .navi__btn {
+    display: none;
+} */
 
-.hamburger-menu {
+.hamburger {
     display: none;
 }
 
@@ -147,7 +147,7 @@ main {
 } */
 
 
-.menu__btn {
+.hamburger__btn {
     /* position: fixed; */
     /* top: 10px; */
     /* right: 10px; */
@@ -160,9 +160,9 @@ main {
     background-color: #000;
 }
 
-.menu__btn span,
-.menu__btn span:before,
-.menu__btn span:after {
+.hamburger__btn span,
+.hamburger__btn span:before,
+.hamburger__btn span:after {
     content: '';
     display: block;
     height: 3px;
@@ -172,25 +172,25 @@ main {
     position: absolute;
 }
 
-.menu__btn span:before {
+.hamburger__btn span:before {
     bottom: 8px;
 }
-.menu__btn span:after {
+.hamburger__btn span:after {
     top: 8px;
 }
 
-#menu-btn-check:checked ~ .menu__btn span {
+#hamburger__btn-check:checked ~ .hamburger__btn span {
     background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
 }
-#menu-btn-check:checked ~ .menu__btn span::before {
+#hamburger__btn-check:checked ~ .hamburger__btn span::before {
     bottom: 0;
     transform: rotate(45deg);
 }
-#menu-btn-check:checked ~ .menu__btn span::after {
+#hamburger__btn-check:checked ~ .hamburger__btn span::after {
     top: 0;
     transform: rotate(-45deg);
 }
 
-#menu-btn-check {
+#hamburger__btn-check {
     display: none;
 }
