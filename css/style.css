@@ -44,7 +44,10 @@
 .navi {
     list-style: none;
     display: flex;
-    /* display: none; */
+}
+
+.hamburger {
+    display: none;
 }
 
 .navi__link {
@@ -71,14 +74,6 @@
 
 .navi__list:last-child {
     margin-right: 0px;
-}
-
-/* .navi__btn {
-    display: none;
-} */
-
-.hamburger {
-    display: none;
 }
 
 main {
@@ -195,4 +190,18 @@ main {
 
 #hamburger__btn-check {
     display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    .navi {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 }
