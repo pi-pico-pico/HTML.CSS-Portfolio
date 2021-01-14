@@ -160,6 +160,8 @@ main {
 .hamburger__btn span,
 .hamburger__btn span:before,
 .hamburger__btn span:after {
+    transition: all 0.5s;
+    z-index: 90;
     content: '';
     display: block;
     height: 3px;
@@ -182,14 +184,63 @@ main {
 #hamburger__btn-check:checked ~ .hamburger__btn span::before {
     bottom: 0;
     transform: rotate(45deg);
+    transition: all 0.5s;
 }
 #hamburger__btn-check:checked ~ .hamburger__btn span::after {
     top: 0;
     transform: rotate(-45deg);
+    transition: all 0.5s;
 }
 
 #hamburger__btn-check {
     display: none;
+    z-index: 90;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #000;
+    transition: all 0.5s;
+    opacity: 0.9;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+#hamburger__btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
 }
 
 @media screen and (max-width: 480px) {
@@ -199,6 +250,7 @@ main {
     }
     .hamburger {
         display: block;
+        z-index: 80;
     }
 }
 
