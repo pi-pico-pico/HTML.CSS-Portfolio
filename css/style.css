@@ -197,7 +197,7 @@ main {
     z-index: 90;
 }
 
-.menu-content {
+.hamburger__content {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -209,15 +209,15 @@ main {
     transition: all 0.5s;
     opacity: 0.9;
 }
-.menu-content ul {
+.hamburger__content ul {
     padding: 70px 10px 0;
 }
-.menu-content ul li {
+.hamburger__content ul li {
     border-bottom: solid 1px #ffffff;
     list-style: none;
 }
 
-.menu-content ul li a {
+.hamburger__content ul li a {
     display: block;
     width: 100%;
     font-size: 15px;
@@ -227,7 +227,7 @@ main {
     padding: 9px 15px 10px 0;
     position: relative;
 }
-.menu-content ul li a::before {
+.hamburger__content ul li a::before {
     content: "";
     width: 7px;
     height: 7px;
@@ -239,7 +239,7 @@ main {
     top: 16px;
 }
 
-#hamburger__btn-check:checked ~ .menu-content {
+#hamburger__btn-check:checked ~ .hamburger__content {
     left: 0;/*メニューを画面内へ*/
 }
 
