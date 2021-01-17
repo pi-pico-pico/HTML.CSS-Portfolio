@@ -383,6 +383,29 @@ main {
         display: block;
         z-index: 80;
     }
+    .txt, .profile__txt-left, .profile__txt-right {
+        transform: rotate(0deg);
+    }
+
+    .profile {
+        min-height: auto;
+        height: auto;
+    }
+
+    .profile__inner {
+        display: block;
+    }
+    .profile__txt-left {
+        height: auto;
+        width: 100%;
+        margin-bottom: 10PX;
+    }
+    .profile__txt-right {
+        height: auto;
+        width: 100%;
+        margin-bottom: 50PX;
+        height: 256px;
+    }
 }
 
 @media screen and (max-width: 768px) {
