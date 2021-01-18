@@ -291,7 +291,6 @@ h2 {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
-    /* line-height: 80%; */
     height: 80%;
     width: 40%;
     border: 1px solid #000;
@@ -375,6 +374,20 @@ main {
 
 /* media query
 ======================================= */
+@media screen and (max-width: 768px) {
+    .profile__txt-left, .txt {
+        transform: rotate(0deg);
+        /* z-index: 10; */
+    }
+    .profile__txt-left {
+        width: 50%;
+    }
+    .profile__txt-right {
+        /* z-index: -1; */
+        /* opacity: 0.8; */
+        width: 50%;
+    }
+}
 @media screen and (max-width: 480px) {
 
     .navi {
@@ -409,9 +422,7 @@ main {
     }
 }
 
-@media screen and (max-width: 768px) {
 
-}
 
 hr.style14 { 
     border: 0; 
