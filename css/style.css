@@ -453,7 +453,7 @@ hr.style14 {
     margin-top:  -10px;
     margin-left: -10px;
     border-radius: 4px 0;
-    border: 4px solid hsla(0, 0%, 100%, 0.35);
+    border: 4px solid hsla(0, 0%, 100%, 1);
     background-clip: padding-box;
     box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
   }
