@@ -249,7 +249,7 @@ h2 {
     align-items: center;
 }
 
-.profile__txt-left {
+.profile__box-left {
     height: 80%;
     width: 40%;
     display: flex;
@@ -277,7 +277,7 @@ h2 {
     transition: all 0.5s;
 }
 
-.txt:hover, .profile__txt-left:hover {
+.txt:hover, .profile__box-left:hover {
     opacity: 1.0;
     transform: rotate(0deg);
     transition: all 0.5s;
@@ -285,7 +285,7 @@ h2 {
 
 
 
-.profile__txt-right {
+.profile__box-right {
     transform: rotate(-20deg);
     border-radius: 10px;
     display: table-cell;
@@ -301,7 +301,7 @@ h2 {
     transition: all 0.5s;
 }
 
-.profile__txt-right:hover {
+.profile__box-right:hover {
     transform: rotate(-0deg);
     transition: all 0.5s;
 }
@@ -348,13 +348,13 @@ main {
     background-color: burlywood;
 } */
 
-.profile__txt-right {
+.profile__box-right {
     /* background-color: brown; */
     background-color: #000;
     border: 1px solid #000;
 }
 
-.profile__txt-left {
+.profile__box-left {
     padding: 15px;
     border-radius: 10px;;
     /* background-color: brown; */
@@ -370,19 +370,17 @@ main {
 ---------------------------------------- */
 
 
-
-
 /* media query
 ======================================= */
 @media screen and (max-width: 768px) {
-    .profile__txt-left, .txt {
+    .profile__card-left, .txt {
         transform: rotate(0deg);
         /* z-index: 10; */
     }
-    .profile__txt-left {
+    .profile__card-left {
         width: 50%;
     }
-    .profile__txt-right {
+    .profile__card-right {
         /* z-index: -1; */
         /* opacity: 0.8; */
         width: 50%;
@@ -397,7 +395,7 @@ main {
         display: block;
         z-index: 80;
     }
-    .txt, .profile__txt-left, .profile__txt-right {
+    .txt, .profile__card-left, .profile__card-right {
         transform: rotate(0deg);
     }
 
@@ -409,12 +407,12 @@ main {
     .profile__inner {
         display: block;
     }
-    .profile__txt-left {
+    .profile__card-left {
         height: auto;
         width: 100%;
         margin-bottom: 10PX;
     }
-    .profile__txt-right {
+    .profile__card-right {
         height: auto;
         width: 100%;
         margin-bottom: 50PX;
