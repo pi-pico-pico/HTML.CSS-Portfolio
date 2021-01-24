@@ -395,7 +395,7 @@ main {
         display: block;
         z-index: 80;
     }
-    .txt, .profile__card-left, .profile__card-right {
+    .txt, .profile__box-left, .profile__box-right {
         transform: rotate(0deg);
     }
 
@@ -407,12 +407,12 @@ main {
     .profile__inner {
         display: block;
     }
-    .profile__card-left {
+    .profile__box-left {
         height: auto;
         width: 100%;
         margin-bottom: 10PX;
     }
-    .profile__card-right {
+    .profile__box-right {
         height: auto;
         width: 100%;
         margin-bottom: 50PX;
