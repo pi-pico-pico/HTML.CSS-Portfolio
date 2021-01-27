@@ -492,7 +492,7 @@ hr.style14 {
 .white {
     color: #000;
     background-color: white;
-    background-image: url(../img/bg-image.gif);
+    /* background-image: url(../img/bg-image.gif); */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right bottom;
