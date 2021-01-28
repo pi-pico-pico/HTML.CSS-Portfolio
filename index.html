@@ -8,6 +8,10 @@
 <meta http-equiv="Expires" content="0">
 <!-- css -->
 <link rel="stylesheet"  href="css/style.css">
+<!-- js -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 <!-- viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <title>Pico</title>
@@ -99,6 +103,20 @@
     </div>
 
 </footer>
+<script>
+ScrollReveal().reveal('.learn__menu', { 
+    duration: 1600, 
+  origin: 'left', 
+  distance: '50px',
+  reset: true   
+});
+ScrollReveal().reveal('.works__card', { 
+    duration: 1600, 
+  origin: 'right', 
+  distance: '50px',
+  reset: true   
+});
 
+        </script>
 </body>
 </html>
