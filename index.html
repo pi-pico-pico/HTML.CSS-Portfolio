@@ -95,6 +95,17 @@
 
 <hr class="hr__style">
 
+            <section class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact__inner">
+                <label for="" class="contact__txt">お名前</label>
+                <input type="text" class="contact__txt">
+                <label for=""  class="contact__txt">内容</label>
+                <textarea  class="contact__txt textarea" name="" id="" cols="30" rows="10"></textarea>
+                <a href="#" class="btn btn__orange">送信</a>
+            </div>
+            </section>
+
         </article>
     </main>
 
@@ -116,6 +127,12 @@ ScrollReveal().reveal('.learn__menu', {
 ScrollReveal().reveal('.works__card', { 
     duration: 1600, 
   origin: 'right', 
+  distance: '50px',
+  reset: true   
+});
+ScrollReveal().reveal('.contact__inner', { 
+    duration: 1600, 
+  origin: 'bottom', 
   distance: '50px',
   reset: true   
 });
