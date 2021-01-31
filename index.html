@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8" />
-<!-- cache -->
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<!-- css -->
-<link rel="stylesheet"  href="css/style.css">
-<!-- js -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-<!-- viewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>Pico</title>
+<head>
+    <meta charset="utf-8" />
+    <!-- cache -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pico</title>
 </head>
+
 <body>
 
-
+    <!-- header -->
     <header class="header">
         <div class="header__inner">
             <div class="header__logo">
@@ -30,6 +30,8 @@
                     <li class="navi__list"><a class="navi__link" href="#">WORKS</a></li>
                     <li class="navi__list"><a class="navi__link" href="#">CONTACT</a></li>
                 </ul>
+
+                <!-- header mobile -->
                 <div class="hamburger">
                     <input type="checkbox" id="hamburger__btn-check">
                     <label for="hamburger__btn-check" class="hamburger__btn"><span></span></label>
@@ -48,6 +50,8 @@
 
     <main>
         <article>
+
+            <!-- top -->
             <section class="learn">
                 <div class="learn">
                     <ul class="learn__menu">
@@ -61,29 +65,31 @@
                 </div>
             </section>
 
-<hr class="hr__style">
+            <hr class="hr__style">
 
+
+            <!-- profile -->
             <section class="profile">
                 <h2>PROFILE</h2>
                 <div class="profile__inner">
-
-                
-                <div class="profile__box-left">
-                    <div class="profile__txt">
-                        <p>名前：Pico</p>
-                        <p>誕生日：10月27日</p>
-                        <p>職業：エンジニア</p>
-                        <p>趣味：プログラミング・絵</p>
+                    <div class="profile__box-left">
+                        <div class="profile__txt">
+                            <p>名前：Pico</p>
+                            <p>誕生日：10月27日</p>
+                            <p>職業：エンジニア</p>
+                            <p>趣味：プログラミング・絵</p>
+                        </div>
                     </div>
-                </div>
-                <div class="profile__box-right">
-                    <p>準備中</p>
-                </div>
+                    <div class="profile__box-right">
+                        <p>準備中</p>
+                    </div>
                 </div>
             </section>
 
-<hr class="hr__style">
+            <hr class="hr__style">
 
+
+            <!-- works -->
             <section class="works">
                 <h2>WORKS</h2>
                 <div class="works__inner">
@@ -93,50 +99,57 @@
                 </div>
             </section>
 
-<hr class="hr__style">
+            <hr class="hr__style">
 
+
+            <!-- contact -->
             <section class="contact">
                 <h2>CONTACT</h2>
                 <div class="contact__inner">
-                <label for="" class="contact__txt">お名前</label>
-                <input type="text" class="contact__txt">
-                <label for=""  class="contact__txt">内容</label>
-                <textarea  class="contact__txt textarea" name="" id="" cols="30" rows="10"></textarea>
-                <a href="#" class="btn btn__orange">送信</a>
-            </div>
+                    <label for="" class="contact__txt">お名前</label>
+                    <input type="text" class="contact__txt">
+                    <label for="" class="contact__txt">内容</label>
+                    <textarea class="contact__txt textarea" name="" id="" cols="30" rows="10"></textarea>
+                    <a href="#" class="btn btn__orange">送信</a>
+                </div>
             </section>
 
         </article>
     </main>
 
-<footer class="footer">
-    <div class="footer__inner">
-        <div class="copy">
-            @2021 Pico
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="copy">
+                @2021 Pico
+            </div>
         </div>
-    </div>
+    </footer>
 
-</footer>
-<script>
-ScrollReveal().reveal('.learn__menu', { 
-    duration: 1600, 
-  origin: 'left', 
-  distance: '50px',
-  reset: true   
-});
-ScrollReveal().reveal('.works__card', { 
-    duration: 1600, 
-  origin: 'right', 
-  distance: '50px',
-  reset: true   
-});
-ScrollReveal().reveal('.contact__inner', { 
-    duration: 1600, 
-  origin: 'bottom', 
-  distance: '50px',
-  reset: true   
-});
 
-        </script>
+    <!-- js animation -->
+    <script>
+        ScrollReveal().reveal('.learn__menu', {
+            duration: 1600,
+            origin: 'left',
+            distance: '50px',
+            reset: true
+        });
+        ScrollReveal().reveal('.works__card', {
+            duration: 1600,
+            origin: 'right',
+            distance: '50px',
+            reset: true
+        });
+        ScrollReveal().reveal('.contact__inner', {
+            duration: 1600,
+            origin: 'bottom',
+            distance: '50px',
+            reset: true
+        });
+
+    </script>
 </body>
+
 </html>
