@@ -218,7 +218,6 @@
     line-height: 60px;
     border-radius: 10px;
     box-shadow: 0px 3px 15px 0px rgba(114, 45, 94, 0.5);
-    /* box-shadow: 6px 1px 2px 1px rgba(163, 163, 163, 0.5); */
 }
 
 
@@ -305,6 +304,16 @@ h2 {
     transition: all 0.5s;
 }
 
+.profile__box-right {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.profile__box-left {
+    padding: 15px;
+    border-radius: 10px;;
+}
+
 /* footer
 ======================================= */
 .footer {
@@ -315,58 +324,7 @@ h2 {
     line-height: 180px;
 }
 
-/* 以下あとで削除
-======================================= */
 
-
-/* .header {
-    background-color: red;
-}
-
-.header__inner {
-    background-color: black;
-}
-
-.header__logo {
-    background-color: #808080;
-}
-
-nav {
-    background-color: #fff;
-}
-
-.menu__btn {
-    background-color: aqua;
-}
-
-main {
-    background-color: brown;
-} */
-
-/* .profile__inner {
-    background-color: burlywood;
-} */
-
-.profile__box-right {
-    /* background-color: brown; */
-    background-color: #000;
-    border: 1px solid #000;
-}
-
-.profile__box-left {
-    padding: 15px;
-    border-radius: 10px;;
-    /* background-color: brown; */
-    /* background-color: #cacaca; */
-    /* border: 1px solid #000; */
-}
-
-/* .profile__txt-left {
-    background-color: cornflowerblue;
-} */
-
-/* ----------------------------------------
----------------------------------------- */
 
 
 /* media query
@@ -492,7 +450,6 @@ hr.style14 {
 .white {
     color: #000;
     background-color: white;
-    /* background-image: url(../img/bg-image.gif); */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right bottom;
@@ -515,7 +472,6 @@ hr.style14 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* background-color: tomato; */
 }
 
 .contact__txt {
