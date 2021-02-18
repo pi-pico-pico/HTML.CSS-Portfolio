@@ -150,12 +150,12 @@
 .hamburger__content ul {
     padding: 70px 10px 0;
 }
-.hamburger__content ul li {
+.hamburger__content ul .hamburger__list {
     border-bottom: solid 1px #ffffff;
     list-style: none;
 }
 
-.hamburger__content ul li a {
+.hamburger__content ul .hamburger__list a {
     display: block;
     width: 100%;
     font-size: 15px;
@@ -165,7 +165,7 @@
     padding: 9px 15px 10px 0;
     position: relative;
 }
-.hamburger__content ul li a::before {
+.hamburger__content ul .hamburger__list a::before {
     content: "";
     width: 7px;
     height: 7px;
