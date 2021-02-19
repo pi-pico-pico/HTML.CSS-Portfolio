@@ -78,7 +78,6 @@
     margin-right: 0px;
 }
 
-/* 後で修正クラス名修正 */
 /* header navi hamburger
 ======================================= */
 .hamburger {
@@ -147,15 +146,15 @@
     transition: all 0.5s;
     opacity: 0.9;
 }
-.hamburger__content ul {
+.hamburger__content .hamburger__item {
     padding: 70px 10px 0;
 }
-.hamburger__content ul .hamburger__list {
+.hamburger__content .hamburger__item .hamburger__list {
     border-bottom: solid 1px #ffffff;
     list-style: none;
 }
 
-.hamburger__content ul .hamburger__list a {
+.hamburger__content .hamburger__item .hamburger__list a {
     display: block;
     width: 100%;
     font-size: 15px;
@@ -165,7 +164,7 @@
     padding: 9px 15px 10px 0;
     position: relative;
 }
-.hamburger__content ul .hamburger__list a::before {
+.hamburger__content .hamburger__item .hamburger__list a::before {
     content: "";
     width: 7px;
     height: 7px;
