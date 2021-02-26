@@ -199,6 +199,7 @@
 
 
 .learn__menu {
+    margin-top: 15px;
     padding: 50px;
     list-style: none;
 }
@@ -439,13 +440,17 @@ a.btn__orange:hover {
 @media screen and (max-width: 768px) {
     .profile__card-left, .profile__txt {
         transform: rotate(0deg);
-        /* z-index: 10; */
     }
     .profile__card-left {
         width: 50%;
     }
     .profile__card-right {
         width: 50%;
+    }
+    .learn__menu {
+        background-color: #fff;
+        width: 80%;
+        opacity: 0.9;
     }
 }
 @media screen and (max-width: 480px) {
