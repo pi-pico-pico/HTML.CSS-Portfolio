@@ -150,7 +150,6 @@
     z-index: 80;
     background-color: #000;
     transition: all 0.5s;
-    opacity: 0.9;
 }
 .hamburger__content .hamburger__item {
     padding: 70px 10px 0;
@@ -190,7 +189,8 @@
 /* section learn
 ======================================= */
 .learn {
-    height: calc(100vh - 60px);
+    padding-top: 100px;
+    height: 100vh;
     background-image: url(../img/bg-image.gif);
     background-repeat: no-repeat;
     background-size: auto 90%;
