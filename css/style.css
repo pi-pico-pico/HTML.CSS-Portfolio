@@ -121,21 +121,21 @@
     top: 8px;
 }
 
-#hamburger__btn-check:checked ~ .hamburger__btn span {
+.hamburger__btn-check:checked ~ .hamburger__btn span {
     background-color: rgba(255, 255, 255, 0);
 }
-#hamburger__btn-check:checked ~ .hamburger__btn span::before {
+.hamburger__btn-check:checked ~ .hamburger__btn span::before {
     bottom: 0;
     transform: rotate(45deg);
     transition: all 0.5s;
 }
-#hamburger__btn-check:checked ~ .hamburger__btn span::after {
+.hamburger__btn-check:checked ~ .hamburger__btn span::after {
     top: 0;
     transform: rotate(-45deg);
     transition: all 0.5s;
 }
 
-#hamburger__btn-check {
+.hamburger__btn-check {
     display: none;
     z-index: 90;
 }
@@ -451,6 +451,11 @@ h2 {
     }
     .profile__card-right {
         width: 50%;
+    }
+    .learn {
+        min-height: 585px;
+        height: 100vh;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 480px) {
