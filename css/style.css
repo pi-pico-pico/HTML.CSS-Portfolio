@@ -124,11 +124,13 @@
 .hamburger__btn-check:checked ~ .hamburger__btn span {
     background-color: rgba(255, 255, 255, 0);
 }
+
 .hamburger__btn-check:checked ~ .hamburger__btn span::before {
     bottom: 0;
     transform: rotate(45deg);
     transition: all 0.5s;
 }
+
 .hamburger__btn-check:checked ~ .hamburger__btn span::after {
     top: 0;
     transform: rotate(-45deg);
@@ -151,9 +153,11 @@
     background-color: #000;
     transition: all 0.5s;
 }
+
 .hamburger__content .hamburger__item {
     padding: 70px 10px 0;
 }
+
 .hamburger__content .hamburger__item .hamburger__list {
     border-bottom: solid 1px #ffffff;
     list-style: none;
@@ -169,6 +173,7 @@
     padding: 9px 15px 10px 0;
     position: relative;
 }
+
 .hamburger__content .hamburger__item .hamburger__list a::before {
     content: "";
     width: 7px;
@@ -197,6 +202,7 @@
     background-position: right bottom;
     max-width: 1230px;
     min-height: 720px;
+    max-height: 100vh;
     margin: 0 auto;
 }
 
