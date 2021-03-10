@@ -366,7 +366,9 @@ h2 {
     padding-right: 25px;
     height: 80%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -374,14 +376,20 @@ h2 {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
-    height: 80%;
-    width: 40%;
     border: 1px solid #000;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.works__card:last-child {
+    margin-bottom: 50px;
 }
 
 .black {
@@ -442,23 +450,8 @@ h2 {
     background: #8c8b8b;
 }
 
-/* あとで修正 */
-.works__inner {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.works__card {
-    margin-bottom: 30px;
-    height: 120px;
-    width: 100%;
-    border-radius: 10px;
-}
-.works__card:last-child {
-    margin-bottom: 50px;
-}
+
+
 
 
 /* media query
@@ -523,17 +516,5 @@ h2 {
     .works {
         min-height: auto;
         height: auto;
-    }
-    .works__inner {
-        display: block;
-    }
-    .works__card {
-        margin-bottom: 20px;
-        height: 100px;
-        width: 100%;
-        border-radius: 10px;
-    }
-    .works__card:last-child {
-        margin-bottom: 50px;
     }
 }
