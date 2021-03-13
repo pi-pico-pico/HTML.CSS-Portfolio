@@ -457,6 +457,7 @@ h2 {
     animation: bounce 2s infinite;
     font-size: 80px;
     color: darkgray;
+    z-index:100;
 }
 
 .arrowBounce svg {
