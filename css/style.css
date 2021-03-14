@@ -458,9 +458,11 @@ h2 {
 .arrowBounce {
     position: relative;
     animation: bounce 2s infinite;
-    font-size: 80px;
-    color: darkgray;
     z-index:100;
+}
+
+.arrowBounce img {
+    width: 50px;
 }
 
 .arrowBounce svg {
