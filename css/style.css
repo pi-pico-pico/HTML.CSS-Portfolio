@@ -354,7 +354,6 @@ h2 {
 
   /* section works
 ======================================= */
-
 .works {
     padding-top: 60px;
     height: 100vh;
@@ -485,6 +484,9 @@ h2 {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* media query
