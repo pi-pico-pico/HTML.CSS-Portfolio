@@ -6,6 +6,10 @@
     font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* header
 ======================================= */
@@ -484,10 +488,22 @@ h2 {
     }
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+/* .pagination a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 24px 0;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 0.2s;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+  }
+  
+  .pagination a.active {
+    transform: scale(1.8);
+  } */
 
 /* media query
 ======================================= */
