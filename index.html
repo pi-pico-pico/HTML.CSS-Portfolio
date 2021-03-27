@@ -54,14 +54,8 @@
             </nav>
         </div>
     </header>
-    <!-- <nav>
-        <a id="pagination1" href="#top"></a>
-        <a id="pagination2" href="#profile"></a>
-        <a id="pagination3" href="#works"></a>
-        <a id="pagination4" href="#contact"></a>
-    </nav> -->
 
-    <main class="fullPageScroll">
+    <main>
         <article>
 
             <!-- top -->
@@ -133,13 +127,7 @@
             
         </article>
     </main>
-    <!-- <nav id="pagination" class="pagination">
-        <a id="pagination1" href="#section1"></a>
-        <a id="pagination2" href="#section2"></a>
-        <a id="pagination3" href="#section3"></a>
-        <a id="pagination4" href="#section4"></a>
-        <a id="pagination5" href="#section5"></a>
-      </nav> -->
+
 
     <!-- footer -->
     <footer class="footer">
@@ -171,64 +159,8 @@
             distance: '50px',
             reset: true
         });
-
-        function doWhenIntersect(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      activatePagination(entry.target);
-    }
-  });
-}
-
-// Intersection Observer
-const sections = document.querySelectorAll(".section");
-const observerRoot = document.querySelector(".fullPageScroll");
-const options = {
-  root: observerRoot,
-  rootMargin: "-50% 0px",
-  threshold: 0
-};
-const observer = new IntersectionObserver(doWhenIntersect, options);
-sections.forEach(section => {
-  observer.observe(section);
-});
-
-// スムーススクロール
-const paginations = document.querySelectorAll(".pagination a");
-paginations.forEach(pagination => {
-  pagination.addEventListener("click", e => {
-    e.preventDefault();
-    const targetId = e.target.hash;
-    const target = document.querySelector(targetId);
-    target.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-/**
- * 交差したときに呼び出す関数
- * @param entries - IntersectionObserverEntry IntersectionObserverが交差したときに渡されるオブジェクトです。
- */
-
- function doWhenIntersect(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      activatePagination(entry.target);
-    }
-  });
-}
-/**
- * ページネーションの大きさを変える関数
- * @param element - HTMLElement 現在表示中のスライドのHTML要素を引数に取ります。
- */
-function activatePagination(element) {
-  const currentActiveIndex = document.querySelector("#pagination .active");
-  if (currentActiveIndex !== null) {
-    currentActiveIndex.classList.remove("active");
-  }
-  const newActiveIndex = document.querySelector(`a[href='#${element.id}']`);
-  newActiveIndex.classList.add("active");
-}
     </script>
+
 </body>
 
 </html>
