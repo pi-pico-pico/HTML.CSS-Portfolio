@@ -488,6 +488,12 @@ h2 {
     }
 }
 
+/* picture */
+.pictures__card {
+    background-color: grey;
+    height: 500px;
+}
+
 
 /* media query
 ======================================= */
