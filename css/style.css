@@ -489,12 +489,18 @@ h2 {
 }
 
 /* picture */
+#illust {
+    margin: auto 0;
+    max-width: 1230PX;
+}
 .illust__card {
     background-color: grey;
     display: flex;
     flex-direction: row;
     width: 80%;
     margin: auto 0;
+    padding: 30px;
+    border:1px solid #000;
 }
 
 
