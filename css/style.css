@@ -189,7 +189,7 @@ html {
     right: 11px;
     top: 16px;
 }
-
+/* TODO後で確認 */
 #hamburger__btn-check:checked ~ .hamburger__content {
     left: 0;
 }
@@ -488,25 +488,18 @@ h2 {
     }
 }
 
-/* picture */
+
+/* illust */
 .illust__inner {
     margin: auto 0;
-    /* max-width: 1230PX; */
-    width: 1230px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 .illust__card {
     background-color: grey;
-    /* display: flex; */
-    /* flex-direction: row; */
     width: 80%;
     margin: auto 0;
     padding: 30px;
     border:1px solid #000;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 
