@@ -489,9 +489,11 @@ h2 {
 }
 
 
-/* illust */
+  /* illust
+======================================= */
 .illust__inner {
-    margin: auto 0;
+    width: 1230px;
+    margin: 0 auto;
     display: flex;
 }
 .illust__card {
