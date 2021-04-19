@@ -53,41 +53,6 @@ html {
 }
 
 
-/* header navi
-======================================= */
-.navi {
-    list-style: none;
-    display: flex;
-}
-
-.navi__link {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    width: 180px;
-    height: 40px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #000;
-    color: #fff;
-    line-height: 40px;
-}
-
-.navi__link:hover {
-    color: #fff;
-    background-color: darkgray;
-}
-
-.navi__list {
-    margin-right: 5px;
-}
-
-.navi__list:last-child {
-    margin-right: 0px;
-}
-
-
-
 /* footer
 ======================================= */
 .footer {
@@ -105,12 +70,15 @@ html {
     margin: 0 auto;
     display: flex;
 }
+
 .illust__card {
     background-color: grey;
     width: 80%;
     margin: auto 0;
     padding: 30px;
     border:1px solid #000;
-    display: flex;
 }
 
+.illust__caption {
+    padding: 10px;
+}
