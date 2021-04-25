@@ -70,13 +70,13 @@ html {
     background-size: cover;
     height: 100vh;
     width: 1230px;
+    margin: 0 auto;
 }
 
 .illust__card {
+    border-radius: 30px;
     background-color: grey;
-    width: 80%;
     height: 80%;
-    margin: 0 auto;
     padding: 30px;
     opacity: 0.5;
 }

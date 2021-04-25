@@ -489,24 +489,6 @@ h2 {
 }
 
 
-  /* illust
-======================================= */
-.illust__inner {
-    width: 1230px;
-    margin: 0 auto;
-    display: flex;
-}
-.illust__card {
-    background-color: grey;
-    width: 80%;
-    margin: auto 0;
-    padding: 30px;
-    border:1px solid #000;
-    display: flex;
-}
-
-
-
 /* media query
 ======================================= */
 @media screen and (max-width: 768px) {
