@@ -18,8 +18,9 @@ html {
     position: fixed;
     z-index: 100;
     width: 100%;
-    background-color: #fff;
+    background-color: #F7F4F2;
     opacity: 0.9;
+    height: 80px;
 }
 
 .header__logo {
@@ -41,7 +42,7 @@ html {
 
 .header__title {
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1px;
 }
 
 .header__title span {
@@ -50,7 +51,11 @@ html {
 }
 
 .header__logo {
-    height: 50px;
+    height: 100%;
+}
+
+.header__img {
+    height: 100%;
 }
 
 
@@ -207,6 +212,7 @@ html {
     max-width: 1230px;
     min-height: 720px;
     margin: 0 auto;
+    background-color: #F7F4F2;
 }
 
 .learn__menu {
@@ -240,6 +246,7 @@ h2 {
     max-width: 1230px;
     min-height: 720px;
     margin: 0 auto; 
+    background-color: #F7F4F2;
 }
 
 .profile__inner {
@@ -364,6 +371,7 @@ h2 {
     max-width: 1230px;
     min-height: 720px;
     margin: 0 auto; 
+    background-color: #F7F4F2;
 }
 
 .works__inner {
@@ -417,6 +425,7 @@ h2 {
     max-width: 1230px;
     min-height: 540px;
     margin: 0 auto;
+    background-color: #F7F4F2;
 }
 
 .contact__inner {
