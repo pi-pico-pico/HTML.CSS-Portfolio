@@ -205,7 +205,7 @@ html {
 .learn {
     padding-top: 100px;
     height: 100vh;
-    background-image: url(../img/bg-image.gif);
+    background-image: url(../img/top.png);
     background-repeat: no-repeat;
     background-size: auto 90%;
     background-position: right bottom;
@@ -218,9 +218,14 @@ html {
 .learn__menu {
     padding: 50px;
     list-style: none;
-    background-color: #161616;
+    background-color: #fff;
+    /* background: rgba(104, 67, 67, 0.8); */
+    background: linear-gradient(-45deg, rgba(247, 244, 242, .1), rgba(104, 67, 67, 0.8));
+    /* background: linear-gradient(-45deg, rgba(247, 244, 242, .1), rgba(161, 118, 25, 0.8)); */
+    border: 1px solid #161616;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 80%;
-    opacity: 0.8;
     color: #fff;
 }
 
@@ -315,8 +320,8 @@ h2 {
 }
 
 .profile__box-right {
-    background-color: #161616;
     border: 1px solid #161616;
+    background: linear-gradient(-45deg, rgba(22, 22, 22, .8), rgba(22, 22, 22, 0.8));
 }
 
 .profile__box-left {
@@ -407,6 +412,7 @@ h2 {
 
 .black {
     background-color: #161616;
+    background: linear-gradient(-45deg, rgba(22, 22, 22, .8), rgba(22, 22, 22, 0.8));
 }
 
 .white {
