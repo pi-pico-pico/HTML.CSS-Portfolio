@@ -219,12 +219,15 @@ html {
     padding: 50px;
     list-style: none;
     background-color: #fff;
-    background: linear-gradient(-45deg, rgba(247, 244, 242, .1), rgba(104, 67, 67, 0.8));
-    border: 1px solid #161616;
+    background: linear-gradient(-45deg, rgba(156, 63, 0, 0.3), rgba(247, 244, 242, 0.8));
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: 0px 3px 15px 0px rgba(163, 163, 163, 0.8);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 80%;
-    color: #fff;
+    color: #161616;
 }
 
 .learn__list {
