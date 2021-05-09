@@ -41,8 +41,9 @@ html {
 }
 
 .header__title {
-    font-weight: normal;
-    font-size: 1px;
+    position:absolute;
+    left:-10000px;
+    top:-10000px;
 }
 
 .header__title span {
