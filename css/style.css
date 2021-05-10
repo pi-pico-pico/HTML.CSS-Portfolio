@@ -220,7 +220,7 @@ html {
     padding: 50px;
     list-style: none;
     background-color: #fff;
-    background: linear-gradient(-45deg, rgba(156, 63, 0, 0.3), rgba(247, 244, 242, 0.8));
+    background: linear-gradient(-45deg, rgba(247, 244, 242, 0.9), rgba(247, 244, 242, 0.9));
     opacity: 0.9;
     background-repeat: no-repeat;
     background-position: right bottom;
