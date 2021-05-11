@@ -195,8 +195,8 @@ html {
     right: 11px;
     top: 16px;
 }
-/* TODO後で確認 */
-#hamburger__btn-check:checked ~ .hamburger__content {
+
+.hamburger__btn-check:checked ~ .hamburger__content {
     left: 0;
 }
 
