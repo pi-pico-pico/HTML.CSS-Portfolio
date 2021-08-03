@@ -410,10 +410,19 @@ h2 {
 }
 
 .works__card a {
-    /* display: block;
+    display: block;
     width: 100%;
-    height: 100%; */
+    height: 100%;
+    line-height: 118px;
+    border-radius: 10px;
 }
+
+.works__card a:hover {
+    color: #161616;
+    display: block;
+    background-color: #F7F4F2;
+}
+
 
 .works__card:last-child {
     margin-bottom: 50px;
