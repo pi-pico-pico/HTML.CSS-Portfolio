@@ -74,12 +74,15 @@ html {
 .illust__card {
     width: 80%;
     margin-top: 40px;
-    background-color: rgb(193, 144, 80);
+    background: -moz-linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8));
+    background: -webkit-linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8));
+    background: linear-gradient(-45deg,rgba(246, 255, 0, .8), rgba(255, 0, 161, .8));
     padding: 30px;
 }
 
 .illust__card img {
     width: auto;
+    border-radius: 10%;
 }
 
 
