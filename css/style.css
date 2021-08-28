@@ -16,10 +16,10 @@ html {
 .learn {
     padding-top: 100px;
     height: 100vh;
-    background-image: url(../img/top.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/top2.png),url(../img/top1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, left bottom;
     background-size: auto 90%;
-    background-position: right bottom;
     max-width: 1230px;
     min-height: 720px;
     margin: 0 auto;
@@ -343,6 +343,9 @@ h2 {
     .learn {
         min-height: 585px;
         height: 100vh;
+        background-image: url(../img/top2.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
     }
     .contact {
         min-height: auto;
