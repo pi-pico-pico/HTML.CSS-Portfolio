@@ -22,6 +22,7 @@ html {
     background-size: auto 90%;
     max-width: 1230px;
     min-height: 720px;
+    max-height: 850px;
     margin: 0 auto;
     background-color: #F7F4F2;
 }
@@ -62,6 +63,7 @@ h2 {
     height: 100vh;
     max-width: 1230px;
     min-height: 720px;
+    max-height: 850px;
     margin: 0 auto; 
     background-color: #F7F4F2;
 }
@@ -177,6 +179,7 @@ h2 {
     height: 100vh;
     max-width: 1230px;
     min-height: 720px;
+    max-height: 850px;
     margin: 0 auto; 
     background-color: #F7F4F2;
 }
@@ -253,6 +256,7 @@ h2 {
     height: calc(100vh - 150px);
     max-width: 1230px;
     min-height: 540px;
+    max-height: 850px;
     margin: 0 auto;
     background-color: #F7F4F2;
 }
