@@ -22,7 +22,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?ver=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <!-- js -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -69,14 +69,10 @@
             <!-- top -->
             <section id="learn">
                 <div class="learn">
-                    <ul class="learn__menu">
-                        <li class="learn__list">SKILLS</li>
-                        <li class="learn__list">HTML/CSS</li>
-                        <li class="learn__list">PHP</li>
-                        <li class="learn__list">MySQL</li>
-                        <li class="learn__list">AWS(Lambda/S3)</li>
-                        <li class="learn__list">Git</li>
-                    </ul>
+                    <div class="learn__menu">
+                        <img class="item1" src="img/top4.png" alt="">
+                        <img class="item1" src="img/top5.png" alt="">
+                    </div>
                     <div class="arrowBounce">&#9013;</div>
                 </div>
 
@@ -119,15 +115,15 @@
             <hr class="hr__style">
 
             <!-- contact -->
-            <form action="" method="get" class="form">
+            <form action=" https://r8qd98z7pj.execute-api.ap-northeast-1.amazonaws.com/default" method="POST" class="form">
                 <section class="contact" id="contact">
                     <h2>CONTACT</h2>
                     <div class="contact__inner">
                         <label for="" class="contact__txt">名前</label>
-                        <input type="text" class="contact__txt">
+                        <input type="text" class="contact__txt" id="name" value="test">
                         <label for="" class="contact__txt">内容</label>
-                        <textarea class="contact__txt textarea" name="" id="" cols="30" rows="10"></textarea>
-                        <button type="button" class="btn btn__black">送信</a>
+                        <textarea class="contact__txt textarea" id="comment" cols="30" rows="10" value="test"></textarea>
+                        <button type="submit" class="btn btn__black">送信</a>
                     </div>
                 </section>
             </form>
