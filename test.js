@@ -5,9 +5,22 @@
 // var img = document.getElementById("logo");
 // rotateOnMouseOver(img);
 
+searchDuplicate("ABCDEE");
 
 
-
+// "ABCDEE"から重複した文字列を検索する
+function searchDuplicate(str) {
+    var result = [];
+    var tmp = [];
+    for (var i = 0; i < str.length; i++) {
+        if (tmp.indexOf(str[i]) === -1) {
+            tmp.push(str[i]);
+        } else {
+            result.push(str[i]);
+        }
+    }
+    return result;
+}
 
 
 
