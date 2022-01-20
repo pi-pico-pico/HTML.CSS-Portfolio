@@ -369,7 +369,6 @@ h2 {
 .arrowBounce {
     position: relative;
     animation: bounce 2s infinite;
-    z-index:1;
     font-size: 50px;
     color: #161616;
 }
@@ -402,9 +401,6 @@ h2 {
 /* media query
 ======================================= */
 @media screen and (max-width: 768px) {
-    /* .profile__card-left, .profile__txt {
-        transform: rotate(0deg);
-    } */
     .profile__card-left {
         width: 50%;
     }
